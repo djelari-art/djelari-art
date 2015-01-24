@@ -1,0 +1,94 @@
+<?php 
+$to = 'petbaik26@gmail.com';
+$subject = 'Subscribing';
+$name = $_POSR['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$message = <<<EMAIL
+I subscribed for your site!
+My email is $email
+EMAIL;
+$header = '$email';
+
+if($_POST){
+	
+mail($to, $subject, $message, $headers)
+}
+?>
+
+
+
+
+<!--
+Author: WebThemez
+Author URL: http://webthemez.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+Note: Please use our back link in your site (webthemez.com)
+-->
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]--> 
+<!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]--> 
+<!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]--> 
+<!--[if IE 9 ]>	<html lang="en" class="ie ie9"> <![endif]--> 
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<style type="text/css">
+	
+	#full-screen-background-image {
+z-index:-999;
+min-height:100%;
+min-width:1050px;
+width:100%;
+height:auto;
+position:fixed;
+top:0;
+left:0;
+opacity:0.8;
+}
+</style>
+<head>
+<meta charset="utf-8">
+<title>УТФ Джелари Арт - В процес на разработка</title>
+<meta name="description" content="Trendset Page under construction">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body id="home">
+<img id="full-screen-background-image" src="images/beads.jpg">
+<div id="Header">
+<div class="wrapper">
+	<h1>УТФ - Джелари Арт</h1>	
+	</div>
+</div>
+<div id="Content" class="wrapper"> 
+<div class="countdown styled"></div> 
+<h2 class="intro">Нашият сайт е в процес на разработка и скоро ще е достъпен за Вас. Абонирайте се и ние ще ви уведомим когато е достъпен!</h2>
+<div id="subscribe"> 
+	<form action="?" method="post" onsubmit="">
+		<p><input name="email" placeholder="Въведете е-мейла си" type="text" id=""/>
+		<input type="submit" value="Абониране"/></p>
+	</form>
+	<div id="socialIcons">
+		<ul> 
+			<li><a href="" title="Twitter" class="twitterIcon"></a></li>
+			<li><a href="" title="facebook" class="facebookIcon"></a></li>
+			<li><a href="" title="linkedIn" class="linkedInIcon"></a></li>
+			
+		</ul>
+	</div>
+</div>
+<span class="tempBy"><a href="http://webthemez.com" alt="webthemez"></a></span>
+</div>
+
+<div id="overlay"></div>
+
+<!--Scripts-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/Backstretch.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+
+</body>
+</html>
