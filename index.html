@@ -1,3 +1,24 @@
+<?php 
+$to = 'petbaik26@gmail.com';
+$subject = 'Subscribing';
+$name = $_POSR['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$message = <<<EMAIL
+I subscribed for your site!
+My email is $email
+EMAIL;
+$header = '$email';
+
+if($_POST){
+	
+mail($to, $subject, $message, $headers)
+}
+?>
+
+
+
+
 <!--
 Author: WebThemez
 Author URL: http://webthemez.com
@@ -31,11 +52,11 @@ opacity:0.8;
 <meta name="description" content="Trendset Page under construction">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body id="home">
-<img id="full-screen-background-image" src="http://www.preciosa-ornela.com/img/gallery/wooden-beads_01.jpg">
+<img id="full-screen-background-image" src="images/beads.jpg">
 <div id="Header">
 <div class="wrapper">
 	<h1>УТФ - Джелари Арт</h1>	
@@ -45,9 +66,9 @@ opacity:0.8;
 <div class="countdown styled"></div> 
 <h2 class="intro">Нашият сайт е в процес на разработка и скоро ще е достъпен за Вас. Абонирайте се и ние ще ви уведомим когато е достъпен!</h2>
 <div id="subscribe"> 
-	<form action="" method="post" onsubmit="">
-		<p><input name="" placeholder="Въведете е-мейла си" type="text" id=""/>
-		<input type="button" value="Абониране"/></p>
+	<form action="?" method="post" onsubmit="">
+		<p><input name="email" placeholder="Въведете е-мейла си" type="text" id=""/>
+		<input type="submit" value="Абониране"/></p>
 	</form>
 	<div id="socialIcons">
 		<ul> 
@@ -64,10 +85,10 @@ opacity:0.8;
 <div id="overlay"></div>
 
 <!--Scripts-->
-<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="Backstretch.js"></script>
-<script type="text/javascript" src="jquery.countdown.js"></script>
-<script type="text/javascript" src="global.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/Backstretch.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
 
 </body>
 </html>
