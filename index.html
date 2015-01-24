@@ -1,20 +1,4 @@
-<?php 
-$to = 'petbaik26@gmail.com';
-$subject = 'Subscribing';
-$name = $_POSR['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$message = <<<EMAIL
-I subscribed for your site!
-My email is $email
-EMAIL;
-$header = '$email';
 
-if($_POST){
-	
-mail($to, $subject, $message, $headers)
-}
-?>
 
 
 
@@ -68,7 +52,7 @@ opacity:0.8;
 <div id="subscribe"> 
 	<form action="?" method="post" onsubmit="">
 		<p><input name="email" placeholder="Въведете е-мейла си" type="text" id=""/>
-		<input type="submit" value="Абониране"/></p>
+		<input type="button" value="Абониране"/></p>
 	</form>
 	<div id="socialIcons">
 		<ul> 
