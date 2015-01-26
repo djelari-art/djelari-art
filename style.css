@@ -126,10 +126,10 @@ margin: 25px 0 45px;
 padding: 20px;
 text-align: center;
 font-size: 28px; 
-font-weight: 300;
+font-weight: bold;
 color: #fff;
 line-height: 36px;
-background-color:rgba(78, 67, 67, 0.82);
+background-color:rgba(33, 33, 33, 0.76);
 }
 #WindowSlide {
 margin: 0 auto;
