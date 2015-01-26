@@ -123,12 +123,13 @@ margin-top:40px;
 #Content h2 {
 display: inline-block;
 margin: 25px 0 45px;
-padding: 0px;
+padding: 20px;
 text-align: center;
 font-size: 28px; 
 font-weight: 300;
 color: #fff;
 line-height: 36px;
+background-color:rgba(78, 67, 67, 0.82);
 }
 #WindowSlide {
 margin: 0 auto;
